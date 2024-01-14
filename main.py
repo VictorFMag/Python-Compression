@@ -3,5 +3,5 @@ archiveToCompact = "teste.txt" # Esse arquivo é utilizado para debugging
 
 import charFrequency as CF
 
-CF.compact(archiveToCompact)
-CF.decompress("compressedFile.txt")
+CF.compress(archiveToCompact)
+#CF.decompress("compressedFile.txt")

@@ -2,7 +2,7 @@ def cleanArchive(archive):
     with open(archive, 'w') as file:
         file.truncate()
 
-def compact(archiveToCompact):
+def compress(archiveToCompact):
     cleanArchive("compressedFile.txt")
 
     with open(archiveToCompact, 'r') as archive:
@@ -10,6 +10,7 @@ def compact(archiveToCompact):
         while line:
             charCount = 1  # Inicializa com 1, pois sempre tem pelo menos 1 caractere
             indiceAtual = 0
+            
             while indiceAtual < len(line) - 1:
                 if line[indiceAtual] == line[indiceAtual + 1]:
                     charCount += 1
