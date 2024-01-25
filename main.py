@@ -4,5 +4,3 @@ archiveToCompact = "teste.txt" # Esse arquivo é utilizado para debugging
 import charFrequency as CF
 
 CF.compress(archiveToCompact)
-CF.converteBinario("compressedFile.txt")
-#CF.decompress("compressedFile.txt")
